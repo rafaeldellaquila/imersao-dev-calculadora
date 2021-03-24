@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  background: rgb(255, 39, 0);
+  background: linear-gradient(
+    140deg,
+    rgba(255, 39, 0, 1) 0%,
+    rgba(255, 167, 0, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.calculator {
+  margin: 10px;
+}
+
+.calculator > .results {
+  width: 320px;
+  height: 170px;
+  background-color: white;
+  text-align: right;
+  box-sizing: border-box;
+  padding-right: 30px;
+}
+
+.calculator > .results > .output {
+  font-size: 65px;
+  color: #272727;
+  padding-top: 40px;
+}
+
+.calculator > .results > .input {
+  font-size: 22px;
+  font-weight: 300;
+  color: #ffa700;
+  border: none;
+  text-align: inherit;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  max-width: 320px;
+}
+
+.buttons > button[type="button"] {
+  width: 80px;
+  height: 80px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.buttons > button[type="button"]:hover {
+  border: 3px solid #242424;
+}
+
+.buttons .color-1 {
+  background-color: #272727;
+  color: white;
+}
+
+.buttons .color-2 {
+  background-color: #2b2b2b;
+  color: #ffa700;
+}
+
+.buttons .color-3 {
+  background-color: #ffa700;
+  color: white;
+  grid-row: span 2;
+  height: 160px !important;
+}
+
+.buttons p {
+  background-color: #2b2b2b;
+  color: white;
+  grid-column: span 2;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.buttons p a {
+  color: white;
+}
+.buttons p a:hover {
+  text-decoration: underline;
+  color: #ffa700;
+}
